@@ -7,8 +7,8 @@
 %global enable_tests 0
 
 Name:		%{?scl_prefix}nodejs-mime-db
-Version:	1.22.0
-Release:	2%{?dist}
+Version:        1.25.0
+Release:        1%{?dist}
 Summary:	This is a database of all mime types
 
 License:	MIT
@@ -61,6 +61,9 @@ cp -pr package.json *.js db.json src/ scripts/ \
 %{nodejs_sitelib}/%{packagename}
 
 %changelog
+* Thu Jan 05 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.25.0-1
+- Updated with script
+
 * Wed Sep 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.22.0-2
 - Built for RHSCL
 
